@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 # Page setup
-st.set_page_config(page_title="Currency Converter Pro", layout="centered")
-st.title("💰 Currency Converter Pro")
+st.set_page_config(page_title="World Currency Exchange", layout="centered")
+st.title("World Currency Exchange")
 st.markdown("Real-time currency conversion and historical exchange rate analysis")
 
 # API Key (use your paid key here)
-API_KEY = "e4752e763ddaa4d605e039f370c4c40c"
+API_KEY = st.secrets["CURRENCY_API_KEY"]
 
 # Input section
 col1, col2 = st.columns(2)
@@ -110,4 +110,4 @@ if st.button("Generate Historical Chart", type="primary"):
 
 # Footer
 st.markdown("---")
-st.caption("Built for Economics Club | Data from CurrencyLayer API")
+st.caption("Data from CurrencyLayer")
