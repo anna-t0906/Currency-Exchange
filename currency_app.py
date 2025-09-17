@@ -9,7 +9,6 @@ st.set_page_config(page_title="World Currency Exchange", layout="centered")
 st.title("World Currency Exchange")
 st.markdown("Real-time currency conversion and historical exchange rate analysis")
 
-# API Key (use your paid key here)
 API_KEY = st.secrets["CURRENCY_API_KEY"]
 
 # Input section
